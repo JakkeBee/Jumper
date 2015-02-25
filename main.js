@@ -11,6 +11,7 @@ var mainState = {
         game.load.image('coin', 'assets/coin.png');
         game.load.image('cloud', 'assets/cloud.png');
         game.load.image('raincloud', 'assets/raincloud.png');
+        game.input.onDown.add(this.jump, this);
     },
 
     create: function () {
@@ -32,15 +33,10 @@ var mainState = {
         this.player.body.setSize(20, 20, 0, 0);
         this.player.body.gravity.y = 1000;
         
-        $('#gameDiv').live('click', function (e) {
-            this.jump();
-        });
-        
-        game.inputEnabled = true;
+//        game.inputEnabled = true;
 //        this.game.input.onDown.addOnce(this.jump, this.game);
-        game.input.onDown.add(this.jump, this);
         
-//        game.input.onDown.add(this.jump, this);
+        game.input.onDown.add(this.jump, this);
             
 //        var spaceKey = this.game.input.keyboard.addKey(Phaser.K);
 //        spaceKey.onDown.add(this.jump, this);
