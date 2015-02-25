@@ -30,9 +30,15 @@ var mainState = {
 
         game.physics.arcade.enable(this.player);
         this.player.body.setSize(20, 20, 0, 0);
-        this.player.body.gravity.y = 1000;  
+        this.player.body.gravity.y = 1000;
         
+        this.gestures = new Gesture(this.game);
+        this.gestures.onTap.add(this.jump, this);
+        
+        game.input.isEnabled = true;
         game.input.onTap.add(this.jump, this);
+        game.input.onkeydown.add(this.jump, this);
+        game.input.onDown.add(this.jump, this);
             
         var spaceKey = this.game.input.keyboard.addKey(Phaser.K);
         spaceKey.onDown.add(this.jump, this);
