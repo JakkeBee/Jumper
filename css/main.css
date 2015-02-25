@@ -33,4 +33,7 @@ body {
 }
 .centerInParent {
     margin: 20% 0 !important;
-}   
+}
+.gameDiv {
+    touch-action: initial !important;
+}
