@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+    <title> Kung Fu Koala </title>
+    <meta name="viewport" content="user-scalable=0, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, minimal-ui=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="phaser.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+<!---------------------------------------------------->
+<!--                page Splash                     -->
+<!---------------------------------------------------->
+<div data-role="page" id="splash" data-theme="a" class="skyTheme">
+    <div role="main" class="ui-content">
+        
+    </div><!-- /content -->
+</div>
+<!-- /page -->
+    
+<!---------------------------------------------------->
+<!--                page Start                      -->
+<!---------------------------------------------------->
+<div data-role="page" id="start" data-theme="a" class="skyTheme">
+    <div data-role="header">
+        <h1>Kung Fu Koala</h1>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <div class="centerInParent">
+            <h3>Get the coins by jumping your Koala</h3>
+            <h4>Tap to jump</h4>
+        
+            <a href="javascript:startGame()" data-transition="slide" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Play</a>
+            
+            <script type="text/javascript" src="http://ad.leadboltmobile.net/show_app_ad.js?section_id=755631745"></script>
+            </div>
+    </div><!-- /content -->
+    <div class="fixedPos" data-role="footer" data-position="fixed">
+        <h4>&copy; Kung Fu Koala</h4>
+    </div><!-- /footer -->
+</div>
+<!-- /page -->
+    
+<!---------------------------------------------------->
+<!--                page Play                       -->
+<!---------------------------------------------------->
+
+<div data-role="page" id="play" data-theme="a" class="skyTheme">
+    <div data-role="header">
+		
+	</div><!-- /header -->
+    <div role="main" class="ui-content">
+        <div id="gameDiv"> </div>
+    </div><!-- /content -->
+    <div class="fixedPos bondTheme" data-role="footer" data-position="fixed">
+	</div><!-- /footer -->
+</div>
+<!-- /page -->
+    
+<!---------------------------------------------------->
+<!--                page Score                      -->
+<!---------------------------------------------------->
+
+<div data-role="page" id="score" data-theme="a" class="skyTheme">
+    <div data-role="header">
+		<h1>Score Board</h1>
+	</div><!-- /header -->
+    <div role="main" class="ui-content">
+        <h3>Your Score</h3>
+        <div id="yourScore"></div>
+        <h3>HighScore</h3>
+        <div id="highScore"></div>
+        <a href="javascript:startGame()" data-transition="slide" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Restart</a>
+        
+        <script type="text/javascript" src="http://ad.leadboltmobile.net/show_app_ad.js?section_id=304900831"></script>
+    </div><!-- /content -->
+    <div class="fixedPos bondTheme" data-role="footer" data-position="fixed">
+        <h4>&copy; Kung Fu Koala</h4>
+	</div><!-- /footer -->
+</div>
+<!-- /page -->
+
+</body>  
+</html>

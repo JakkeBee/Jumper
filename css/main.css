@@ -1,0 +1,36 @@
+@viewport {
+    orientation: portrait;
+}
+body {
+    overflow: hidden;
+}
+.black {
+    background-color: #000000 !important;
+}
+.skyTheme {
+    background-color: #c5e0ff !important;
+    text-align: center;
+    text-shadow: 0 0px 0 #eee !important;
+}
+.fixedPos {
+    position: fixed !important;
+}
+.textAlignCenter {
+    text-align: center;
+}
+.textGrey {
+    color: #909090;
+}
+.textWhite {
+    color: white !important:
+}
+.white {
+    color: white;
+    display: block;
+}
+.buttonMargin {
+    margin: 20px 10px;
+}
+.centerInParent {
+    margin: 20% 0 !important;
+}   
