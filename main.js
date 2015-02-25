@@ -36,6 +36,10 @@ var mainState = {
 //        game.input.onTap.add(this.jump, this);
 //        game.input.onkeydown.add(this.jump, this);
         game.input.onDown.add(this.jump, this);
+        
+        if (this.game.input.pointer1.isDown) {
+            this.jump();
+        }
             
 //        var spaceKey = this.game.input.keyboard.addKey(Phaser.K);
 //        spaceKey.onDown.add(this.jump, this);
