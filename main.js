@@ -15,7 +15,7 @@ var mainState = {
 
     create: function () {
         "use strict";
-//        game.physics.startSystem(Phaser.Physics.ARCADE);
+        game.physics.startSystem(Phaser.Physics.ARCADE);
 
         this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.minWidth = 320;
