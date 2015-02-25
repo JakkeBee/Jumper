@@ -32,6 +32,10 @@ var mainState = {
         this.player.body.setSize(20, 20, 0, 0);
         this.player.body.gravity.y = 1000;
         
+        $('#gameDiv').live('click', function (e) {
+            this.jump();
+        });
+        
         game.inputEnabled = true;
 //        this.game.input.onDown.addOnce(this.jump, this.game);
         game.input.onDown.add(this.jump, this);
