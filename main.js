@@ -2,7 +2,7 @@
 var game = new Phaser.Game(400, 490, Phaser.CANVAS, 'gameDiv');
 
 var mainState = {
-
+    
     preload: function () {
         "use strict";
         game.stage.backgroundColor = '#c5e0ff';
@@ -32,7 +32,10 @@ var mainState = {
         this.player.body.setSize(20, 20, 0, 0);
         this.player.body.gravity.y = 1000;
         
-        game.input.onDown.add(this.jump, this);
+//        this.game.input.onDown.addOnce(this.jump, this.game);
+        this.game.input.onDown.add(this.jump, this.game);
+        
+//        game.input.onDown.add(this.jump, this);
             
 //        var spaceKey = this.game.input.keyboard.addKey(Phaser.K);
 //        spaceKey.onDown.add(this.jump, this);
