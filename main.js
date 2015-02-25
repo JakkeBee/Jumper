@@ -1,5 +1,5 @@
 // Initialize Phaser
-var game = new Phaser.Game(400, 490, Phaser.CANVAS, 'gameDiv');
+var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
 
 var mainState = {
     
@@ -24,7 +24,7 @@ var mainState = {
         this.scale.maxHeight = 1152;
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true;
-        game.scale.refresh();
+        
         
         this.player = this.game.add.sprite(100, 245, 'player');
 
@@ -32,6 +32,7 @@ var mainState = {
         this.player.body.setSize(20, 20, 0, 0);
         this.player.body.gravity.y = 1000;
         
+        game.inputEnabled = true;
 //        this.game.input.onDown.addOnce(this.jump, this.game);
         game.input.onDown.add(this.jump, this);
         
@@ -65,6 +66,7 @@ var mainState = {
         this.labelScore = game.add.text(20, 20, "0", { font: "30px Arial", fill: "#ffffff" });
         
         this.player.anchor.setTo(-0.2, 0.5);
+        game.scale.refresh();
     },
 
     update: function () {
