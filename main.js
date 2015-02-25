@@ -33,7 +33,7 @@ var mainState = {
         this.player.body.gravity.y = 1000;
         
 //        this.game.input.onDown.addOnce(this.jump, this.game);
-        this.game.input.onDown.add(this.jump, this.game);
+        game.input.onDown.add(this.jump, this);
         
 //        game.input.onDown.add(this.jump, this);
             
