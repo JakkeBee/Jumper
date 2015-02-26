@@ -204,6 +204,10 @@ function startGame () {
 };
 $(document).ready(function () {
     "use strict";
+    var img = document.createElement("IMG");
+	img.src = "assets/background.png";
+	document.getElementById('image').appendChild(img);
+    
     setTimeout(function () {                                             window.location.href = ('#start');
                 }, 3000);
 });
