@@ -33,7 +33,7 @@ var mainState = {
 
         game.physics.arcade.enable(this.player);
         this.player.body.setSize(20, 20, 0, 0);
-        this.player.body.gravity.y = 1000;
+        this.player.body.gravity.y = 20;
         
         this.player.inputEnabled = true;
         this.player.events.onInputDown.add(this.jump, this);
