@@ -18,13 +18,16 @@ var mainState = {
         "use strict";
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
-        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+//        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.minWidth = 320;
         this.scale.minHeight = 480;
         this.scale.maxWidth = 768;
-        this.scale.maxHeight = 1152;
-        this.scale.pageAlignHorizontally = true;
-        this.scale.pageAlignVertically = true;
+//        this.scale.maxHeight = 1152;
+//        this.scale.pageAlignHorizontally = true;
+//        this.scale.pageAlignVertically = true;
+        
+        game.scale.startFullScreen();
+        game.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
         
         
         this.player = this.game.add.sprite(100, 245, 'player');
