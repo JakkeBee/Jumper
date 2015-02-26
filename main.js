@@ -100,6 +100,7 @@ var mainState = {
     },
     jump: function () {
         "use strict";
+        this.event.preventDefault();
         this.player.body.velocity.y = -350;
         
         var animation = game.add.tween(this.player);
