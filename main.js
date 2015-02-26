@@ -11,6 +11,7 @@ var mainState = {
         game.load.image('coin', 'assets/coin.png');
         game.load.image('cloud', 'assets/cloud.png');
         game.load.image('raincloud', 'assets/raincloud.png');
+        game.load.image('koala', 'assets/background.png');
         game.input.onDown.add(this.jump, this);
     },
 
