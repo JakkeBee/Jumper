@@ -16,7 +16,7 @@ var mainState = {
 
     create: function () {
         "use strict";
-        game.physics.startSystem(Phaser.Physics.ARCADE);
+        game.physics.startSystem(Phaser.Physics.AUTO);
 
 //        this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.minWidth = 320;
@@ -29,17 +29,14 @@ var mainState = {
         game.scale.startFullScreen();
         game.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
         
-        var cans = document.getElementById('game');
-        cans.addEventListener("touchstart", this.jump, true);
-        cans.addEventListener("touchmove", this.jump, false);
-        cans.addEventListener("touchend", this.jump, false);
-        cans.addEventListener("touchcancel", this.jump, false);
-        
         this.player = this.game.add.sprite(100, 245, 'player');
 
         game.physics.arcade.enable(this.player);
         this.player.body.setSize(20, 20, 0, 0);
         this.player.body.gravity.y = 1000;
+        
+        this.player.inputEnabled = true;
+        this.player.events.onInputDown.add(this.jump, this);
         
 //        game.inputEnabled = true;
 //        this.game.input.onDown.addOnce(this.jump, this.game);
@@ -100,7 +97,6 @@ var mainState = {
     },
     jump: function () {
         "use strict";
-        this.event.preventDefault();
         this.player.body.velocity.y = -350;
         
         var animation = game.add.tween(this.player);
