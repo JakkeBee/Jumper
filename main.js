@@ -1,5 +1,5 @@
 // Initialize Phaser
-var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(320, 480, Phaser.AUTO, 'gameDiv');
 
 var mainState = {
     
@@ -29,6 +29,11 @@ var mainState = {
         game.scale.startFullScreen();
         game.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
         
+        var cans = document.getElementById('game');
+        cans.addEventListener("touchstart", this.jump, true);
+        cans.addEventListener("touchmove", this.jump, false);
+        cans.addEventListener("touchend", this.jump, false);
+        cans.addEventListener("touchcancel", this.jump, false);
         
         this.player = this.game.add.sprite(100, 245, 'player');
 
