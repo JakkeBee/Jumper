@@ -1,13 +1,13 @@
 @viewport {
     orientation: portrait;
 }
-body {
-    overflow: hidden;
-}
 .skyTheme {
     background-color: #c5e0ff !important;
     text-align: center;
     text-shadow: 0 0px 0 #eee !important;
+}
+body {
+    overflow: hidden;
 }
 .fixedPos {
     position: fixed !important;
@@ -21,3 +21,8 @@ body {
 canvas {
     touch-action: initial !important;
 }
+.splashTheme {
+    max-height: 100%;
+    max-width: 100%;
+}
+    
