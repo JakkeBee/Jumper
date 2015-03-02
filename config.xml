@@ -10,10 +10,11 @@
 
         <preference name="phonegap-version" value="3.5.0" />
 
-        <name>KFK_config.xml</name>
+        <name>Kung Fu Koala</name>
 
         <description>
-        An example for phonegap build docs. 
+        Jump with your Kung Fu Koala through the sky. Fun game, fun koala!
+        Keep jumping through the sky between the clouds. Jump to catch the coins. Try to catch as many coins as possible with your Kung Fu Koala. Don't let your Kong Fu Koala hit a rainy cloud!
         </description>
 
         <author href="http://www.topidee.be" email="jan.bruyninckx1@gmail.com">
