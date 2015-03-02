@@ -8,7 +8,7 @@
 
         <!-- versionCode is optional and Android only -->
 
-        <preference name="phonegap-version" value="3.5.0" />
+        <preference name="phonegap-version" value="3.7.0" />
 
         <name>Kung Fu Koala</name>
 
@@ -16,6 +16,8 @@
         Jump with your Kung Fu Koala through the sky. Fun game, fun koala!
         Keep jumping through the sky between the clouds. Jump to catch the coins. Try to catch as many coins as possible with your Kung Fu Koala. Don't let your Kong Fu Koala hit a rainy cloud!
         </description>
+        
+        <preference name="permissions" value="none" />
 
         <author href="http://www.topidee.be" email="jan.bruyninckx1@gmail.com">
         Jan Bruyninckx
